@@ -17,10 +17,6 @@ public class linkdownload_check extends Base{
     }
 
 
-    @After
-    public void setUpChrome() {
-        driverClose();
-    }
 
 
 
@@ -41,6 +37,12 @@ public class linkdownload_check extends Base{
         POlink_download.checkTitle();
 
     }
+
+    @After
+    public void setUpChrome() {
+        driverClose();
+    }
+
 
 
 }
